@@ -1,0 +1,249 @@
+:root {
+	--primary-color: #21243d;
+	--secondary-color: #ffd17e;
+	--footer-color: #111111;
+}
+
+/* navbar responsive */
+
+@media (max-width: 830px) {
+	.header .mainMenu {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: var(--primary-color);
+		transition: top 1s ease;
+		display: none;
+	}
+
+	.header .mainMenu .closeMenu {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	.header .openMenu {
+		display: block;
+	}
+}
+/* navbar ends here */
+
+
+
+@media (min-width: 830px) and (max-width: 1180px) {
+	.header .mainMenu {
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	.header .mainMenu li a {
+		font-size: 16px;
+	}
+	.search-box {
+		margin: 0 10px;
+	}
+	.dish-box img {
+		width: 310px;
+	}
+	.banner-text h1 {
+		font-size: 4rem;
+	}
+
+	.banner-text p {
+		margin: 30px 0;
+		font-size: 1.5rem;
+	}
+
+	.banner-btn {
+		padding: 10px 80px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 830px) {
+	.banner-text h1 {
+		font-size: 3rem;
+	}
+	.banner-text p {
+		margin: 30px 0;
+		font-size: 1.2rem;
+	}
+
+	.banner-btn {
+		padding: 10px 80px;
+	}
+
+	.menu-text {
+		font-size: 22px;
+	}
+
+	.menu-textbox {
+		font-size: 20px;
+	}
+
+	.dish-box img {
+		width: 250px;
+	}
+
+	.dish-text h2 {
+		font-size: 2.5rem;
+	}
+
+	.dish-text p {
+		font-size: 16px;
+	}
+
+	.counter-text {
+		font-size: 16px;
+		padding: 50px 0 0 0;
+	}
+
+	.counter-box {
+		font-size: 16px;
+	}
+
+	.left-footer h3 {
+		font-size: 20px;
+	}
+
+	.left-footer p {
+		font-size: 16px;
+	}
+
+	.right-footer li a {
+		font-size: 16px;
+	}
+}
+
+
+@media (min-width: 320px) and (max-width: 760px) {
+    
+.banner-btn a {
+    font-size: 16px;
+}
+
+.banner-btn {
+    padding: 10px 50px;
+    
+}
+
+.dish-box img {
+    width: 170px;
+}
+
+.dish-2, .dish {
+    flex-direction: column;
+}
+
+.footer{
+    flex-direction:column;
+}
+.footer .right-footer {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.banner{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+
+.banner-text {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    padding: 10px 0;
+}
+
+.banner-text p {
+    font-size: 18px;
+}
+
+.banner-text h1 {
+    font-size: 30px;
+}
+
+.header .openMenu {
+    font-size: 10px;
+}
+
+.logo img {
+    padding: 5px 10px;
+    width: 200px;
+}
+.fa-bars:before {
+    content: "\f0c9";
+    font-size: 25px;
+}
+.menu-text, .menu-textbox  {
+    font-size: 18px;
+}
+.menu-box img {
+    width: 150px;
+}
+
+.dish-text {
+    width: 100%;
+}
+.dish-text h2 {
+    font-size: 25px;
+}
+
+.dish-text p {
+    font-size: 18px;
+}
+
+.counter-text {
+    font-size: 18px;
+}
+
+.counter-circle {
+    padding: 40px 30px;
+    margin: 40px 0;
+}
+
+.dish-2 .dish-text {
+    text-align: center;
+}
+
+.review img {
+    width: 150px;
+}
+
+.review-text p {
+    font-size: 16px;
+}
+
+.review-text h3 {
+    font-size: 20px;
+}
+
+.review {
+    padding: 20px 0;
+}
+
+.footer .left-footer {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.right-footer ul {
+    padding: 5px 0 20px 0;
+}
+
+
+}
